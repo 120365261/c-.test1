@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
@@ -64,6 +65,7 @@ namespace Test
         static void Main(string[] args)
         {
             Console.WriteLine("都不会输出什么来。。。");
+            Debug.WriteLine("会出来吗？？");
             //TestInvoke();
             //NlogTest();
             InitIoc();
