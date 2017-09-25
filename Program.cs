@@ -66,6 +66,7 @@ namespace Test
         {
             Console.WriteLine("都不会输出什么来。。。");
             Debug.WriteLine("会出来吗？？");
+            Debug.WriteLine("会出来吗？？");
             //TestInvoke();
             //NlogTest();
             InitIoc();
