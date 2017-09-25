@@ -63,6 +63,7 @@ namespace Test
 
         static void Main(string[] args)
         {
+            Console.WriteLine("都不会输出什么来。。。");
             //TestInvoke();
             //NlogTest();
             InitIoc();
