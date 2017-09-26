@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -57,16 +58,29 @@ namespace Test
             return obj;
         }
     }
-
+    public enum EOrderField
+    {
+        A,
+        B,
+        C
+    }
     class Program
     {
-        private static IContainer Container { get; set; }
+        public EOrderField a { set; get; }
 
+        public void MyTestMethod()
+        {
+            Console.WriteLine(a.ToString());
+            return;
+        }
+        private static IContainer Container { get; set; }
         static void Main(string[] args)
         {
+
+
             Console.WriteLine("都不会输出什么来。。。");
             Debug.WriteLine("会出来吗？？");
-            Debug.WriteLine("会出来吗？？
+            //Debug.WriteLine("会出来吗？？
             //TestInvoke();
             //NlogTest();
             InitIoc();
