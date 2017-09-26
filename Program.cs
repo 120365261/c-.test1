@@ -48,7 +48,7 @@ namespace Test
     {
         static IocContainer()
         {
-            Program.InitIoc();
+            Program.InitIoc(
 
         }
         public static IContainer Container { get; set; }
